@@ -64,21 +64,25 @@ Guarda el archivo de configuración y reinicia Nginx para que los cambios surtan
 Si tienes errores 403 forbidden una de las soluciones es poner el usuario de la computadora en la configuracion de nginx : 
 ```cd /etc/nginx$ ``` y luego : ```sudo nano nginx.conf```
 
-Paso 3 - Crea una cuenta y consigue una url  de ngrok , esta url servira de remplazo a una ip estatica , sin esta no puede el sitio publicarse 
+Paso 3 - Crea una cuenta y consigue una url  de ngrok , esta url servira de remplazo a una ip estatica y sin esta no puede el sitio publicarse (sigue los pasos de la pagina)
 
 
 Paso 4 - Y por ultimo en settings.py del proyecto django agrega tanto la url de ngrok como la del servidor de desarrollo de django
 aqui : 
+
+
 ALLOWED_HOSTS = [
-                '127.0.0.1',
-                'eaf5-2800-370-144-ec40-ba97-5aff-fe0d-68ff.ngrok-free.app',
+                '127.0.0.1',# pon tu url de server de desarrollo de django
+                'eaf5-2800-370-144-ec40-ba97-5aff-fe0d-68ff.ngrok-free.app',#pon tu url de ngrok
                 ]
+                
+                
 
 
 
-Paso 5 - Reinicia el servidor de nginx y entra ala url de ngronk , deberia de funcionar.
+Paso 5 - Reinicia el servidor de nginx , entra ala url de ngronk y en teoria deberia de funcionar.
 
-Esta guia es muy basica y tiene errores probablemente , estoy haciendo pruebas con termine de entender esto lo actualizare
+En teoria deberia funcionar pero al ser un tema complejo puede que hallan errores inesperados.
 
 
 
