@@ -73,6 +73,7 @@ aqui :
 
 ALLOWED_HOSTS = [
                 '127.0.0.1',# pon tu url de server de desarrollo de django
+                
                 'eaf5-2800-370-144-ec40-ba97-5aff-fe0d-68ff.ngrok-free.app',#pon tu url de ngrok
                 ]
                 
