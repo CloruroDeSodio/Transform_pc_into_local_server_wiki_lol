@@ -62,7 +62,8 @@ Guarda el archivo de configuración y reinicia Nginx para que los cambios surtan
 
 
 Si tienes errores 403 forbidden una de las soluciones es poner el usuario de la computadora en la configuracion de nginx : 
-```cd /etc/nginx$ ``` y luego : ```sudo nano nginx.conf```
+```cd /etc/nginx$ ``` , luego : ```sudo nano nginx.conf``` y en la primera linea pon user aguacate aguacate; **aguacate es el usuario de la pc**
+
 
 Paso 3 - Crea una cuenta y consigue una url  de ngrok , esta url servira de remplazo a una ip estatica y sin esta no puede el sitio publicarse (sigue los pasos de la pagina)
 
