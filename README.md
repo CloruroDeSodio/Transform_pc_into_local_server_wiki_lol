@@ -70,12 +70,13 @@ Paso 3 - Crea una cuenta y consigue una url  de ngrok , esta url servira de remp
 Paso 4 - Y por ultimo en settings.py del proyecto django agrega tanto la url de ngrok como la del servidor de desarrollo de django
 aqui : 
 
-
+```
 ALLOWED_HOSTS = [
                 '127.0.0.1',# pon tu url de server de desarrollo de django
-                
+
                 'eaf5-2800-370-144-ec40-ba97-5aff-fe0d-68ff.ngrok-free.app',#pon tu url de ngrok
                 ]
+```
                 
                 
 
